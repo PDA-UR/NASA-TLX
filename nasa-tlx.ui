@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Wizard</class>
+ <widget class="QWizard" name="Wizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NASA-TLX</string>
+  </property>
+  <widget class="QWizardPage" name="wizardPage1">
+   <widget class="QLabel" name="label_title">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>NASA-TLX</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Beanspruchungshöhe</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>631</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Geben Sie jetzt für jede der unten stehenden Dimensionen an, wie hoch die Beanspruchung
+war. Markieren Sie dazu bitte auf den folgenden Skalen, in welchem Maße Sie sich in den
+sechs genannten Dimensionen von der Aufgabe beansprucht oder gefordert gesehen haben</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Geistige Anforderungen</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>340</y>
+      <width>471</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wie viel geistige Anstrengung war bei der Informationsaufnahme 
+und -verarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, 
+Erinnern, Hinsehen, Suchen...)? 
+War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex,
+erforderte sie hohe Genauigkeit oder war sie fehlertolerant? </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>550</y>
+      <width>561</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wie viel körperliche Aktivität war erforderlich
+(z.B. Ziehen, Drücken, Drehen, Steuern, Aktivieren,…)? War die Aufgabe leicht oder
+schwer, einfach oder anstrengend, erholsam
+oder mühselig? </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>510</y>
+      <width>301</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Körperliche Anforderungen </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>710</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Zeitliche Anforderungen</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>730</y>
+      <width>571</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wie viel Zeitdruck empfanden Sie hinsichtlich
+der Häufigkeit oder dem Takt, mit dem Aufgaben oder Aufgabenelemente auftraten? 
+War die Abfolge langsam und geruhsam oder schnell und hektisch? </string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_mental">
+    <property name="geometry">
+     <rect>
+      <x>814</x>
+      <y>390</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>370</y>
+      <width>601</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>skala_gering_hoch.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>530</y>
+      <width>601</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>skala_gering_hoch.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_physical">
+    <property name="geometry">
+     <rect>
+      <x>815</x>
+      <y>550</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>730</y>
+      <width>601</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>skala_gering_hoch.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_temporal">
+    <property name="geometry">
+     <rect>
+      <x>814</x>
+      <y>750</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>label_9</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_title</zorder>
+   <zorder>label_device</zorder>
+   <zorder>label</zorder>
+   <zorder>label_device_2</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_device_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>slider_mental</zorder>
+   <zorder>label_10</zorder>
+   <zorder>slider_temporal</zorder>
+   <zorder>label_device_4</zorder>
+   <zorder>label_3</zorder>
+   <zorder>slider_physical</zorder>
+  </widget>
+  <widget class="QWizardPage" name="wizardPage2">
+   <widget class="QLabel" name="label_title_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>NASA-TLX</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>730</y>
+      <width>1171</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wie unsicher, entmutigt, irritiert, gestresst und
+verärgert (versus sicher, bestätigt, zufrieden,
+entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe? </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>340</y>
+      <width>1171</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wie erfolgreich haben Sie Ihrer Meinung nach
+die vom Versuchsleiter (oder Ihnen selbst)
+gesetzten Ziele erreicht? Wie zufrieden waren
+Sie mit Ihrer Leistung bei der Verfolgung dieser Ziele?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>510</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Anstrengung</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>710</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Frustration</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>520</y>
+      <width>1171</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wie hart mussten sie arbeiten, um Ihren Grad
+an Aufgabenerfüllung zu erreichen? </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Leistung</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>799</x>
+      <y>352</y>
+      <width>601</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>skala_gut_schlecht.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_performance">
+    <property name="geometry">
+     <rect>
+      <x>815</x>
+      <y>390</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_frustration">
+    <property name="geometry">
+     <rect>
+      <x>814</x>
+      <y>750</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_effort">
+    <property name="geometry">
+     <rect>
+      <x>815</x>
+      <y>550</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="sliderPosition">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>730</y>
+      <width>601</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>skala_gering_hoch.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>530</y>
+      <width>601</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>skala_gering_hoch.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>901</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Geben Sie jetzt für jede der unten stehenden Dimensionen an, wie hoch die Beanspruchung
+war. Markieren Sie dazu bitte auf den folgenden Skalen, in welchem Maße Sie sich in den
+sechs genannten Dimensionen von der Aufgabe beansprucht oder gefordert gesehen haben</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_device_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Beanspruchungshöhe: </string>
+    </property>
+   </widget>
+   <zorder>label_13</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_title_2</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_device_6</zorder>
+   <zorder>label_device_7</zorder>
+   <zorder>label_device_8</zorder>
+   <zorder>label_11</zorder>
+   <zorder>slider_performance</zorder>
+   <zorder>slider_frustration</zorder>
+   <zorder>slider_effort</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_device_5</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
