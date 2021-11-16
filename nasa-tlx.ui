@@ -63,7 +63,7 @@
      <rect>
       <x>40</x>
       <y>160</y>
-      <width>631</width>
+      <width>1081</width>
       <height>81</height>
      </rect>
     </property>
@@ -71,6 +71,9 @@
      <string>Geben Sie jetzt für jede der unten stehenden Dimensionen an, wie hoch die Beanspruchung
 war. Markieren Sie dazu bitte auf den folgenden Skalen, in welchem Maße Sie sich in den
 sechs genannten Dimensionen von der Aufgabe beansprucht oder gefordert gesehen haben</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_device_2">
@@ -98,7 +101,7 @@ sechs genannten Dimensionen von der Aufgabe beansprucht oder gefordert gesehen h
      <rect>
       <x>40</x>
       <y>340</y>
-      <width>471</width>
+      <width>731</width>
       <height>121</height>
      </rect>
     </property>
@@ -109,13 +112,16 @@ Erinnern, Hinsehen, Suchen...)?
 War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex,
 erforderte sie hohe Genauigkeit oder war sie fehlertolerant? </string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>40</x>
       <y>550</y>
-      <width>561</width>
+      <width>731</width>
       <height>101</height>
      </rect>
     </property>
@@ -124,6 +130,9 @@ erforderte sie hohe Genauigkeit oder war sie fehlertolerant? </string>
 (z.B. Ziehen, Drücken, Drehen, Steuern, Aktivieren,…)? War die Aufgabe leicht oder
 schwer, einfach oder anstrengend, erholsam
 oder mühselig? </string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_device_3">
@@ -171,7 +180,7 @@ oder mühselig? </string>
      <rect>
       <x>40</x>
       <y>730</y>
-      <width>571</width>
+      <width>731</width>
       <height>101</height>
      </rect>
     </property>
@@ -179,6 +188,9 @@ oder mühselig? </string>
      <string>Wie viel Zeitdruck empfanden Sie hinsichtlich
 der Häufigkeit oder dem Takt, mit dem Aufgaben oder Aufgabenelemente auftraten? 
 War die Abfolge langsam und geruhsam oder schnell und hektisch? </string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QSlider" name="slider_mental">
@@ -386,6 +398,9 @@ War die Abfolge langsam und geruhsam oder schnell und hektisch? </string>
 verärgert (versus sicher, bestätigt, zufrieden,
 entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe? </string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
@@ -401,6 +416,9 @@ entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe?
 die vom Versuchsleiter (oder Ihnen selbst)
 gesetzten Ziele erreicht? Wie zufrieden waren
 Sie mit Ihrer Leistung bei der Verfolgung dieser Ziele?</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_device_6">
@@ -455,6 +473,9 @@ Sie mit Ihrer Leistung bei der Verfolgung dieser Ziele?</string>
     <property name="text">
      <string>Wie hart mussten sie arbeiten, um Ihren Grad
 an Aufgabenerfüllung zu erreichen? </string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_device_8">
@@ -640,6 +661,9 @@ an Aufgabenerfüllung zu erreichen? </string>
      <string>Geben Sie jetzt für jede der unten stehenden Dimensionen an, wie hoch die Beanspruchung
 war. Markieren Sie dazu bitte auf den folgenden Skalen, in welchem Maße Sie sich in den
 sechs genannten Dimensionen von der Aufgabe beansprucht oder gefordert gesehen haben</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_device_5">
